@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-with, initial-scale=1.0">
+ <title> Formulario de Registro de consolas</title>
+ <style>
+form {
+width: 50%;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid black;
+background-color: rgb(245, 245, 245);
+
+}
+label {
+font-weight: bold;    
+}
+input, select{
+width: 100%;
+margin-bottom: 10px;    
+}
+
+input [type="submit"] {
+background-color: aqua;
+color: violet;
+padding: 10px;
+cursor: pointer;    
+}
+
+h1{
+text-align: center; 
+text-shadow: 2px 2px 8px rgba(239, 239, 239, 0.7);  
+ 
+}
+body{
+    background-image: url(halo.jpg);
+    background-size: cover;   
+}
+</style>
+
+</head>
+<body>
+ <h1>Formulario de Registro de Consolas</h1>
+ <form>
+ <label for="tipo">Tipo de Consola:</label>
+ <input type="text" id="Nombre" name="Nombre">
+ 
+ <label for="tipo">Tipo de Consola</label>
+ <select id="tipo" name="tipo">
+ <option value="xbox"> Xbox</option>
+ <option value="Play">play</option>
+</select>
+
+<label for="Nueva">¿Seguro que si es Nueva?</label>
+<input type="checkbox" id="Nueva" name="Nueva"> Sí
+
+<label>Tipo</label>
+<input type="radio" id="360" name="X360" value="360">Xbox360
+<input type="radio" id="One" name="One" value="One">XboxOne
+
+<input type="submit" value="Enviar">
+ </form>   
+</body>    
+</html>
